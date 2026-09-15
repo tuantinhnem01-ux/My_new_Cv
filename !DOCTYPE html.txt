@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuan Tin Hnem | CV</title>
+  <style>
+    /* Page colours and general layout */
+    :root {
+      --navy: #19214d;
+      --purple: #6a4cda;
+      --pink: #f25790;
+      --mint: #dff9ef;
+      --ink: #29324c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(135deg, #fff3cf, #e9e1ff, #d7f8ee);
+      padding: 32px 18px;
+    }
+
+    .cv {
+      width: min(920px, 100%);
+      margin: auto;
+      overflow: hidden;
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgba(39, 38, 93, .18);
+    }
+
+    /* Profile area */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      padding: 42px;
+      color: white;
+      background: linear-gradient(120deg, var(--navy), var(--purple), var(--pink));
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 5px solid white;
+      border-radius: 50%;
+      background: white;
+    }
+
+    h1, h2, p { margin-top: 0; }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+    }
+
+    .intro {
+      margin-bottom: 0;
+      max-width: 570px;
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+
+    main { padding: 38px 42px 44px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+    }
+
+    section {
+      padding: 26px;
+      border-radius: 18px;
+    }
+
+    .education { background: #fff3d2; }
+    .skills { background: var(--mint); }
+
+    h2 {
+      color: var(--navy);
+      font-size: 1.35rem;
+    }
+
+    .detail {
+      margin-bottom: 0;
+      line-height: 1.7;
+    }
+
+    /* Skill labels */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      padding: 8px 13px;
+      color: white;
+      font-weight: bold;
+      background: var(--purple);
+      border-radius: 999px;
+    }
+
+    .link-area {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: var(--pink);
+      border-radius: 999px;
+    }
+
+    .button:hover { background: #d93d78; }
+
+    /* Mobile layout */
+    @media (max-width: 620px) {
+      body { padding: 14px; }
+
+      header {
+        padding: 30px 24px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      main { padding: 24px; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <header>
+      <!-- Put photo.jpg in this same folder. -->
+      <img class="profile-photo" src="photo.jpg" alt="Portrait of Tuan Tin Hnem">
+
+      <div>
+        <h1>Tuan Tin Hnem</h1>
+        <p class="intro">
+          A motivated and curious person who enjoys learning, creating,
+          and building useful digital experiences.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="education">
+          <h2>Education</h2>
+          <!-- Replace with your school details. -->
+          <p class="detail">
+            <strong>Your School or University</strong><br>
+            Degree or programme · Graduation year
+          </p>
+        </section>
+
+        <section class="skills">
+          <h2>Skills</h2>
+          <div class="tags">
+            <span class="tag">Communication</span>
+            <span class="tag">Teamwork</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Creativity</span>
+          </div>
+        </section>
+      </div>
+
+      <div class="link-area">
+        <!-- Change this to your own website or social-media link. -->
+        <a class="button" href="https://example.com" target="_blank">
+          Visit My Link
+        </a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
